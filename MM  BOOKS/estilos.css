@@ -8,6 +8,9 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
+h2{
+    width: auto;
+}
 .home{
     position: fixed;
 }
@@ -55,11 +58,11 @@ nav td{
 }
 .corpo{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin-left: 24%;
-    margin-top: auto;
-    margin-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
 }
 #cred{
     position: fixed;
@@ -74,6 +77,9 @@ nav td{
     font-size: 150%;
     box-shadow: 3px 0px 8px black;
     z-index: 4;
+}
+.botaolivro a{
+    width: auto;
 }
 #projeto{
     position: fixed;
@@ -96,26 +102,35 @@ nav td{
     display: none;
 }
 .botaolivro{
+    height: 40vh;
     display: inline-block;
     position: relative;
 }
 .botaolivro img{
     box-shadow: 3px 0px 8px black;
     bottom: 0%;
+    height: 40vh;
 }
 .pp {
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
+    height: 70vh;
+    width: auto;
+    top: 0%;
+    margin-top: 7vh;
+}
+.pp img{
+    height: 86.7vh;
     width: auto;
 }
 .len{
+    margin-top: 6.5vh;
     width: auto;
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0%;
-    padding-bottom: 0%;
     height: 90.51%;
     bottom: 0;
     top: auto;
@@ -126,6 +141,7 @@ nav td{
     margin: auto;
     width: auto;
     top: 0%;
+    margin-top: 7vh;
 }
 .botaolivro a{
     width: auto;
@@ -139,7 +155,7 @@ nav td{
     position: absolute;
     bottom: 0%;
     top: auto;
-    margin-bottom: 0.7%;
+    margin-bottom: 0vh;
     background-color: rgba(135, 23, 5, 0.6);
     transition: all 300ms ease-out;
 }
@@ -148,7 +164,7 @@ nav td{
     font-size: 170%;
 }
 .len .titulo{
-    margin-bottom: 0%;
+    margin-bottom: 2.55vh;
 }
 .pp .titulo{
     top: 0;

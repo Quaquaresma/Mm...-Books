@@ -36,15 +36,24 @@ nav{
     width: 90%;
     opacity: 100%;
 }
+tr{
+    width: auto;
+}
 nav .botaomenu{
     padding-top: 1%;
     padding-bottom: 1%;
     position: relative;
-    width: 80%;
+    max-width: 100%;
     text-align: center;
+    min-width: 5vw ;
+    max-width: 20vw;
     font-size: 300%;
     opacity: 100%;
     margin: auto;
+}
+nav p{
+    min-width: 5vw ;
+    max-width: 20vw;
 }
 nav table{
     margin-right: auto;
@@ -55,14 +64,17 @@ nav td{
     margin-right: auto;
     margin-left: auto;
     border-bottom:solid #64acd9 4px; 
+    width: auto;
 }
 .corpo{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin-left: 24%;
+    margin-left: 27%;
     padding-top: auto;
     padding-bottom: auto;
+    width: auto;
+    margin-right: 18vw;
 }
 #cred{
     position: fixed;
@@ -118,6 +130,7 @@ nav td{
     width: auto;
     top: 0%;
     margin-top: 7vh;
+    margin-left: 4vw;
 }
 .pp img{
     height: 86.7vh;

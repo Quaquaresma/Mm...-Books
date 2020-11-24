@@ -11,42 +11,54 @@ body{
 .home{
     position: fixed;
 }
+article{
+    margin: 0%;
+    padding: 0%;
+    width: auto;
+}
 nav{
     background-color: rgba(47, 78, 128, 0.81);
     position: fixed;
     left: 0;
     top: 0;
     height: 100%;
-    width: 400px;
+    width: 22%;
     font-family: 'Grandstander', cursive;
     box-shadow: 3px 0px 8px black;
     color: #68a8ad;
     text-shadow: 2px 2px #314e63;
-
 }
-nav #DOOM{
-    width: 380px;
-    padding-top: 5px;
-    left: 10px;
+#DOOM{
+    padding-left: 5%;
+    width: 90%;
     opacity: 100%;
 }
 nav .botaomenu{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 1%;
+    padding-bottom: 1%;
     position: relative;
-    border-bottom:solid #64acd9 4px;
-    width: 300px;
-    left: 50px;
+    width: 80%;
     text-align: center;
-    font-size: 48px;
+    font-size: 300%;
     opacity: 100%;
+    margin: auto;
+}
+nav table{
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+nav td{
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom:solid #64acd9 4px; 
 }
 .corpo{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    margin-left: 21%;
-    padding-top: 2%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin-left: 24%;
+    margin-top: auto;
     margin-bottom: auto;
 }
 #cred{
@@ -84,49 +96,63 @@ nav .botaomenu{
     display: none;
 }
 .botaolivro{
+    display: inline-block;
     position: relative;
 }
 .botaolivro img{
     box-shadow: 3px 0px 8px black;
+    bottom: 0%;
 }
 .pp {
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
-    margin: auto;
+    width: auto;
 }
 .len{
+    width: auto;
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 73px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    height: 90.51%;
+    bottom: 0;
+    top: auto;
 }
 .ed{
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
     margin: auto;
+    width: auto;
+    top: 0%;
+}
+.botaolivro a{
+    width: auto;
 }
 
 .titulo{
     font-family: 'Grandstander', cursive;
-    font-size: 23px;
+    font-size: 140%;
     color: white;
     width: 100%;
     position: absolute;
     bottom: 0%;
-    margin-bottom: 0.8%;
+    top: auto;
+    margin-bottom: 0.7%;
     background-color: rgba(135, 23, 5, 0.6);
     transition: all 300ms ease-out;
 }
 .botaolivro:hover .titulo{
     background-color: rgba(135, 23, 5, 1);
-    font-size: 25px;
+    font-size: 170%;
 }
 .len .titulo{
-    margin-bottom: 0.8%;
+    margin-bottom: 0%;
 }
 .pp .titulo{
     top: 0;
+    width: 100%;
     bottom: auto;
 }
 .titulo h2{

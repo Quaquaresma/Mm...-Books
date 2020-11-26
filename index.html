@@ -16,14 +16,14 @@
             <tbody>
                 <tr>
                     <td>
-                        <div class="botaomenu">
+                        <div class="botaomenu" id="botaoproj">
                             <p>Projeto<br>Literário</p>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="botaomenu">
+                        <div class="botaomenu" id="botaocred">
                             <p>Créditos<br>do Projeto</p>
                         </div>
                     </td>
@@ -32,7 +32,8 @@
         </table>
     </nav>
     <main class="corpo">
-        <section id="cred" class="invisivel">
+        <section id="credito" class="invisivel modal">
+            <span class="x">✘</span>
             <h2>Créditos</h2>
                 <h3>Julia Lendell</h3>
                     <p> 
@@ -59,7 +60,8 @@
                         san a. Proin nec laoreet nunc. Phasellus sed imperdiet augue.
                     </p>
         </section>
-        <section id="projeto" class="invisivel">
+        <section id="projeto" class="invisivel modal">
+            <span class="x">✘</span>
             <h2>Sobre o Projeto de Leitura</h2>
                 <p> 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies enim non lorem aliquam, eget congue nisi tempus. Nulla blandit tincidunt est eget tincidunt. P
@@ -101,5 +103,6 @@
             </a>
         </article>
     </main>
+    <script src="modal.js"></script>
 </body>
 </html>

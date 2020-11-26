@@ -17,7 +17,7 @@ nav{
     left: 0;
     top: 0;
     height: 100%;
-    width: 400px;
+    width: 23vw;
     font-family: 'Grandstander', cursive;
     box-shadow: 3px 0px 8px black;
     color: #68a8ad;
@@ -25,28 +25,50 @@ nav{
 
 }
 nav #DOOM{
-    width: 380px;
-    padding-top: 5px;
-    left: 10px;
+    width: 90%;
+    padding-top: 1%;
+    margin-left: 5%;
     opacity: 100%;
 }
-nav .botaomenu{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    position: relative;
+nav tr{
+    width: 100%;
+}
+nav td{
     border-bottom:solid #64acd9 4px;
-    width: 300px;
-    left: 50px;
+}
+nav tr{
+    transition: all 100ms ease-in;
+}
+nav tr:hover {
+    background-color: rgba(47, 78, 128, 1);
+}
+nav .botaomenu{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    position: relative;
+    width: 21vw;
     text-align: center;
-    font-size: 48px;
+    font-size: 3em;
     opacity: 100%;
+    background-image: none;
+    transition: all 100ms ease-in;
+}
+nav table{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+.botaomenu:hover{
+    cursor: pointer;
+    background-color: rgba(47, 78, 128, 1);
 }
 .corpo{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    margin-left: 21%;
+    margin-left: 25vw;
     padding-top: 2%;
+    margin-right: 13vw;
     margin-bottom: auto;
 }
 #cred{
@@ -63,7 +85,8 @@ nav .botaomenu{
     box-shadow: 3px 0px 8px black;
     z-index: 4;
 }
-#projeto{
+.modal{
+    z-index: 1;
     position: fixed;
     top: 5%;
     bottom: 5%;
@@ -77,11 +100,12 @@ nav .botaomenu{
     box-shadow: 3px 0px 8px black;
     z-index: 4;
 }
-.visivel{
-    display: block;
+.modal{
+    transition: all 100ms ease-in;
 }
 .invisivel{
-    display: none;
+    opacity: 0%;
+    z-index: -1;
 }
 .botaolivro{
     position: relative;
@@ -92,7 +116,16 @@ nav .botaomenu{
 .pp {
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
-    margin: auto;
+    margin-left: 2vw;
+}
+.x{
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    color: white;
+}
+.x:hover{
+    cursor: pointer;
 }
 .len{
     grid-column: 1 / span 1;

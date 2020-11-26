@@ -8,16 +8,8 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
-h2{
-    width: auto;
-}
 .home{
     position: fixed;
-}
-article{
-    margin: 0%;
-    padding: 0%;
-    width: auto;
 }
 nav{
     background-color: rgba(47, 78, 128, 0.81);
@@ -25,56 +17,37 @@ nav{
     left: 0;
     top: 0;
     height: 100%;
-    width: 22%;
+    width: 400px;
     font-family: 'Grandstander', cursive;
     box-shadow: 3px 0px 8px black;
     color: #68a8ad;
     text-shadow: 2px 2px #314e63;
+
 }
-#DOOM{
-    padding-left: 5%;
-    width: 90%;
+nav #DOOM{
+    width: 380px;
+    padding-top: 5px;
+    left: 10px;
     opacity: 100%;
-}
-tr{
-    width: auto;
 }
 nav .botaomenu{
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     position: relative;
-    max-width: 100%;
+    border-bottom:solid #64acd9 4px;
+    width: 300px;
+    left: 50px;
     text-align: center;
-    min-width: 5vw ;
-    max-width: 20vw;
-    font-size: 300%;
+    font-size: 48px;
     opacity: 100%;
-    margin: auto;
-}
-nav p{
-    min-width: 5vw ;
-    max-width: 20vw;
-}
-nav table{
-    margin-right: auto;
-    margin-left: auto;
-    width: 80%;
-}
-nav td{
-    margin-right: auto;
-    margin-left: auto;
-    border-bottom:solid #64acd9 4px; 
-    width: auto;
 }
 .corpo{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-left: 27%;
-    padding-top: auto;
-    padding-bottom: auto;
-    width: auto;
-    margin-right: 18vw;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin-left: 21%;
+    padding-top: 2%;
+    margin-bottom: auto;
 }
 #cred{
     position: fixed;
@@ -89,9 +62,6 @@ nav td{
     font-size: 150%;
     box-shadow: 3px 0px 8px black;
     z-index: 4;
-}
-.botaolivro a{
-    width: auto;
 }
 #projeto{
     position: fixed;
@@ -114,76 +84,64 @@ nav td{
     display: none;
 }
 .botaolivro{
-    height: 40vh;
-    display: inline-block;
     position: relative;
 }
 .botaolivro img{
     box-shadow: 3px 0px 8px black;
-    bottom: 0%;
-    height: 40vh;
 }
 .pp {
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
-    height: 70vh;
-    width: auto;
-    top: 0%;
-    margin-top: 7vh;
-    margin-left: 4vw;
-}
-.pp img{
-    height: 86.7vh;
-    width: auto;
+    margin: auto;
 }
 .len{
-    margin-top: 6.5vh;
-    width: auto;
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0%;
-    height: 90.51%;
-    bottom: 0;
-    top: auto;
+    margin-top: 73px;
 }
 .ed{
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
     margin: auto;
-    width: auto;
-    top: 0%;
-    margin-top: 7vh;
-}
-.botaolivro a{
-    width: auto;
 }
 
 .titulo{
     font-family: 'Grandstander', cursive;
-    font-size: 140%;
+    font-size: 23px;
     color: white;
     width: 100%;
     position: absolute;
     bottom: 0%;
-    top: auto;
-    margin-bottom: 0vh;
+    margin-bottom: 0.8%;
     background-color: rgba(135, 23, 5, 0.6);
     transition: all 300ms ease-out;
 }
 .botaolivro:hover .titulo{
     background-color: rgba(135, 23, 5, 1);
-    font-size: 170%;
+    font-size: 25px;
 }
 .len .titulo{
-    margin-bottom: 2.55vh;
+    margin-bottom: 0.8%;
 }
 .pp .titulo{
     top: 0;
-    width: 100%;
     bottom: auto;
 }
 .titulo h2{
     padding-left: 5px;
+}
+.capa img{
+    height: 100%;
+    width: 23%;
+    float: right;
+    padding-left: 20px;
+}
+.resenha{
+    margin-left: 22%;
+    margin-top: 4%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    font-family: 'Grandstander', cursive;
 }

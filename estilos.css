@@ -225,4 +225,14 @@ nav table{
     width: 3vw;
     height: 3vh;
     opacity: 0;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+#secreto a:active, #secreto a:visited,#secreto a:hover, #secreto a{
+    color: white;
+    text-decoration: none;
+}
+#secreto:hover{
+    opacity: 100%;
 }

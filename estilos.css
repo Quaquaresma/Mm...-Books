@@ -236,3 +236,12 @@ nav table{
 #secreto:hover{
     opacity: 100%;
 }
+.resenha{
+  font-family: 'Grandstander', cursive;
+  background-color: rgba(47, 78, 128, 1);
+  margin-bottom: 15%;
+  position: relative; left: 5.5%; right: 0;
+  padding: 2%;
+  color: white;
+
+}

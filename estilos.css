@@ -66,11 +66,11 @@ nav table{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin-left: 27%;
+    margin-left: 32%;
     padding-top: auto;
     padding-bottom: auto;
     width: auto;
-    margin-right: 18vw;
+    margin-right: 14vw;
 }
 .botaolivro a{
     width: auto;
@@ -217,4 +217,12 @@ nav table{
     width: auto;
     top: 0%;
     margin-top: 7vh;
+}
+#secreto {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3vw;
+    height: 3vh;
+    opacity: 0;
 }

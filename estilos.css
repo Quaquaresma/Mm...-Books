@@ -162,12 +162,6 @@ nav table{
 .titulo h2{
     padding-left: 5px;
 }
-.capa img{
-    height: 100%;
-    width: 23%;
-    float: right;
-    padding-left: 20px;
-}
 .resenha{
     margin-left: 22%;
     margin-top: 4%;
@@ -244,4 +238,51 @@ nav table{
   padding: 2%;
   color: white;
 
+}
+.capa img{
+  position: relative;
+   z-index: 2;
+    height: 100%;
+    width: 100%;
+    float: right;
+    padding-left: 20px;
+}
+.capa img:hover{
+  animation: sumindo 100ms ease-in 0s forwards,
+  girando  300ms 0s ease-in forwards;
+}
+@keyframes sumindo {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0.3;
+  }
+}
+@keyframes girando {
+  from{ transform: rotateY(0);}
+  to{transform: rotateY(180deg);}
+}
+.capatexto{
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 26%;
+  float: right;
+  padding-left: 10px;
+  opacity: 2.5;
+  color: white;
+}
+.card{
+  height: 100%;
+  width: 26%;
+  float: right;
+  padding-left: 20px;
+}
+#topo-da-pagina img{
+  height: 35%;
+  width:19%;
+  position: fixed;
+  top: 0;
+ margin-left: 15%;
 }

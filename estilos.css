@@ -237,27 +237,25 @@ nav table{
   position: relative; left: 5.5%; right: 0;
   padding: 2%;
   color: white;
+  box-shadow: 3px 0px 8px black;
 
 }
 .capa img{
   position: relative;
-   z-index: 2;
+  z-index: 2;
     height: 100%;
     width: 100%;
     float: right;
     padding-left: 20px;
+    opacity: 1;
 }
 .capa img:hover{
-  animation: sumindo 100ms ease-in 0s forwards,
+  animation: sumindo 100ms 0s ease-in forwards,
   girando  300ms 0s ease-in forwards;
 }
 @keyframes sumindo {
-  from{
-    opacity: 1;
-  }
-  to{
-    opacity: 0.3;
-  }
+  from{opacity: 1.0;}
+  to{opacity: 0.3;}
 }
 @keyframes girando {
   from{ transform: rotateY(0);}
@@ -265,24 +263,38 @@ nav table{
 }
 .capatexto{
   position: absolute;
-  z-index: 1;
   height: 100%;
   width: 26%;
   float: right;
   padding-left: 10px;
   opacity: 2.5;
-  color: white;
+  color:white;
 }
 .card{
   height: 100%;
   width: 26%;
   float: right;
   padding-left: 20px;
+  background: rgba(47, 78, 128, 1);
 }
 #topo-da-pagina img{
   height: 35%;
   width:19%;
   position: fixed;
-  top: 0;
+  padding: 0;
+  transform: translateY(-90%);
  margin-left: 15%;
+ opacity:0.5;
+ transition: opacity .8s ease;
+ transition: translateY .8s ease;
+}
+#topo-da-pagina img:hover{
+  transform: translateY(-60%);
+  opacity: 1.0;
+}
+.texto h1{
+font-size: 2.0rem;
+}
+.texto h2{
+font-size: 1.0rem;
 }

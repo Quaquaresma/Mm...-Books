@@ -231,72 +231,71 @@ nav table{
     opacity: 100%;
 }
 .resenha{
-  font-family: 'Grandstander', cursive;
-  background-color: rgba(47, 78, 128, 1);
-  margin-bottom: 15%;
-  position: relative; left: 5.5%; right: 0;
-  padding: 2%;
-  color: white;
-  box-shadow: 3px 0px 8px black;
-
+    font-family: 'Grandstander', cursive;
+    background-color: rgba(47, 78, 128, 1);
+    margin-bottom: 15%;
+    position: relative; left: 5.5%; right: 0;
+    padding: 2%;
+    color: white;
+    box-shadow: 3px 0px 8px black;
 }
 .capa img{
-  position: relative;
-  z-index: 2;
+    position: relative;
     height: 100%;
     width: 100%;
     float: right;
     padding-left: 20px;
     opacity: 1;
 }
-.capa img:hover{
-  animation: sumindo 100ms 0s ease-in forwards,
-  girando  300ms 0s ease-in forwards;
-}
-@keyframes sumindo {
-  from{opacity: 1.0;}
-  to{opacity: 0.3;}
-}
-@keyframes girando {
-  from{ transform: rotateY(0);}
-  to{transform: rotateY(180deg);}
-}
 .capatexto{
-  position: absolute;
-  height: 100%;
-  width: 26%;
-  float: right;
-  padding-left: 10px;
-  opacity: 2.5;
-  color:white;
+    position: absolute;
+    height: 22.5vw;
+    z-index: 1;
+    width: 33.1vh;
+    padding-left: 1%;
+    float: right;
+    right: 2vw;
+    opacity: 0;
+    color:black;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 100ms ease-out;
+}
+.ctcorvo{
+    height: 52vh;
+}
+.ctprincipe{
+    height: 51vh;
+}
+.capatexto:hover{
+    opacity: 1;
 }
 .card{
-  height: 100%;
-  width: 26%;
-  float: right;
-  padding-left: 20px;
-  background: rgba(47, 78, 128, 1);
+    height: 100%;
+    width: 26%;
+    float: right;
+    padding-left: 20px;
+    background: rgba(47, 78, 128, 1);
 }
 #topo-da-pagina img{
-  height: 35%;
-  width:19%;
-  position: fixed;
-  padding: 0;
-  transform: translateY(-90%);
- margin-left: 15%;
- opacity:0.5;
- transition: opacity .8s ease;
- transition: translateY .8s ease;
+    height: 35%;
+    width:19%;
+    position: fixed;
+    padding: 0;
+    transform: translateY(-90%);
+    margin-left: 15%;
+    opacity:0.5;
+    transition: opacity .8s ease;
+    transition: translateY .8s ease;
 }
 #topo-da-pagina img:hover{
-  transform: translateY(-60%);
-  opacity: 1.0;
+    transform: translateY(-60%);
+    opacity: 1.0;
 }
 .texto h1{
-font-size: 2.0rem;
+    font-size: 2.0rem;
 }
 .texto h2{
-font-size: 1.0rem;
+    font-size: 1.0rem;
 }
 #listinha li{
     padding-top: 0.5rem;
@@ -304,13 +303,6 @@ font-size: 1.0rem;
 }
 #listinha{
     padding-left: 1.0rem;
-}
-.capatexto{
-    width: 13.0rem;
-    height: 20.0rem;
-    /*background-color: white;
-    color: rgba(47, 78, 128, 1);*/
-
 }
 .texto{
     padding-left: 1.0rem;

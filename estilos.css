@@ -246,17 +246,17 @@ nav table{
     height: 100%;
     width: 100%;
     float: right;
-    padding-left: 20px;
+    margin-left: 1%;
     opacity: 1;
 }
 .capatexto{
     position: absolute;
-    height: 22.5vw;
     z-index: 1;
-    width: 33.1vh;
+    height: 44.85vh;
+    width: 32vh;
     padding-left: 1%;
     float: right;
-    right: 2vw;
+    right: 1.95vw;
     opacity: 0;
     color:black;
     background-color: rgba(255, 255, 255, 0.9);
@@ -264,6 +264,24 @@ nav table{
 }
 .ctcorvo{
     height: 52vh;
+}
+.cardcorvo img{
+    height: 52vh;
+    width: 33.1vh;
+}
+.cardlenin img{
+    width: 33.1vh;
+}
+.cardlenin{
+    margin-left: 4%;
+}
+.cardpequeno img{
+    height: 51vh;
+    width: 33.1vh;
+}
+.cardcorvo img{
+    height: 52vh;
+    width: 33.1vh;
 }
 .ctprincipe{
     height: 51vh;
@@ -330,4 +348,4 @@ nav table{
 #projeto p{
     padding-left: 1.2rem;
     padding-right: 1.2rem;
-}
+} 

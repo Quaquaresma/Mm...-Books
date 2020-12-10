@@ -30,13 +30,7 @@ nav #DOOM{
     margin-left: 5%;
     opacity: 100%;
 }
-nav tr{
-    width: 100%;
-}
-nav td{
-    border-bottom:solid #64acd9 4px;
-}
-nav tr{
+nav{
     transition: all 100ms ease-in;
 }
 nav tr:hover {
@@ -46,12 +40,18 @@ nav .botaomenu{
     padding-top: 1vh;
     padding-bottom: 1vh;
     position: relative;
-    width: 21vw;
+    width: 100%;
     text-align: center;
     font-size: 3em;
     opacity: 100%;
+    border-bottom:solid #64acd9 4px;
     background-image: none;
     transition: all 100ms ease-in;
+}
+#menu{
+    display: flex;
+    align-items: initial;
+    flex-direction: column;
 }
 nav table{
     margin-right: auto;
@@ -104,6 +104,7 @@ nav table{
     box-shadow: 3px 0px 8px black;
     z-index: 4;
     transition: all 100ms ease-in;
+    overflow: auto;
 }
 
 .modal p{
@@ -252,48 +253,27 @@ nav table{
 .capatexto{
     position: absolute;
     z-index: 1;
-    height: 44.85vh;
-    width: 32vh;
+    height: 100%;
+    width: 100%;
     padding-left: 1%;
     float: right;
-    right: 1.95vw;
     opacity: 0;
     color:black;
     background-color: rgba(255, 255, 255, 0.9);
     transition: all 100ms ease-out;
+    overflow: auto;
 }
-.ctcorvo{
-    height: 52vh;
-}
-.cardcorvo img{
-    height: 52vh;
-    width: 33.1vh;
-}
-.cardlenin img{
-    width: 33.1vh;
-}
-.cardlenin{
-    margin-left: 4%;
-}
-.cardpequeno img{
-    height: 51vh;
-    width: 33.1vh;
-}
-.cardcorvo img{
-    height: 52vh;
-    width: 33.1vh;
-}
-.ctprincipe{
-    height: 51vh;
+.card img{
+    max-width: 100%;
 }
 .capatexto:hover{
     opacity: 1;
 }
 .card{
-    height: 100%;
-    width: 26%;
+    max-width: 26%;
     float: right;
-    padding-left: 20px;
+    position: relative;
+    margin-left: 20px;
     background: rgba(47, 78, 128, 1);
 }
 #topo-da-pagina img{
@@ -340,6 +320,9 @@ nav table{
 }
 .texto p{
     font-size: 1.2rem;
+    line-height: 1.5em;
+    text-align: justify;
+    margin-bottom: 2em;
 }
 #projeto h2{
     padding-left: 1.2rem;

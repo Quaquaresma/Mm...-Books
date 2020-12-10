@@ -44,7 +44,6 @@ nav .botaomenu{
     text-align: center;
     font-size: 250%;
     opacity: 100%;
-    border-bottom:solid #64acd9 4px;
     background-image: none;
     transition: all 100ms ease-in;
 }

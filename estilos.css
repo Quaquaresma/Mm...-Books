@@ -330,4 +330,16 @@ nav table{
 #projeto p{
     padding-left: 1.2rem;
     padding-right: 1.2rem;
-} 
+}
+
+
+.botaomenu span{
+  font-family: 'Nosifer', cursive;
+  color: #d6c124;
+  text-shadow: 3px 3px #bf6913;
+  font-size: 70%
+}
+.botaomenu a{
+  text-decoration: none;
+  color: inherit;
+}

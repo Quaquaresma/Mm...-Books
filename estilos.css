@@ -343,3 +343,23 @@ nav table{
   text-decoration: none;
   color: inherit;
 }
+label{
+  display: block;
+}
+.texto a{
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Nosifer', cursive;
+  color: #d6c124;
+  text-shadow: 3px 3px #bf6913;
+  transition: all .2s ease-in-out;
+}
+.texto a:hover{
+  font-size: 1.5rem;
+}
+#paragrafo{
+  text-align: center;
+}
+#enviar{
+  right: 0;
+}

@@ -8,11 +8,11 @@ xEl.addEventListener('click', closemod);
 x2El.addEventListener('click', closemod2);
 function showmod(){
     let modaldivEl = document.querySelector('#projeto');
-    modaldivEl.classList.toggle('invisivel');    
+    modaldivEl.classList.toggle('invisivel');
 }
 function showmod2(){
     let modaldiv2El = document.querySelector('#credito');
-    modaldiv2El.classList.toggle('invisivel');    
+    modaldiv2El.classList.toggle('invisivel');
 }
 function closemod(){
     let spanX1El = document.querySelector("#projeto");

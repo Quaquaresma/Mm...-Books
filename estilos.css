@@ -164,13 +164,7 @@ nav table{
 .titulo h2{
     padding-left: 5px;
 }
-.resenha{
-    margin-left: 22%;
-    margin-top: 4%;
-    margin-right: 9%;
-    margin-bottom: 10%;
-    font-family: 'Grandstander', cursive;
-}
+
 .botaolivro{
     height: 40vh;
     display: inline-block;
@@ -232,10 +226,13 @@ nav table{
 #secreto:hover{
     opacity: 100%;
 }
-.resenha{
+.quiz, .resenha{
+    margin-left: 22%;
+    margin-top: 4%;
+    margin-right: 9%;
+    margin-bottom: 17%;
     font-family: 'Grandstander', cursive;
     background-color: rgba(47, 78, 128, 1);
-    margin-bottom: 15%;
     position: relative; left: 5.5%; right: 0;
     padding: 2%;
     color: white;
@@ -290,10 +287,10 @@ nav table{
     transform: translateY(-60%);
     opacity: 1.0;
 }
-.texto h1{
+.texto h1, .corpo-quiz h1{
     font-size: 2.0rem;
 }
-.texto h2{
+.texto h2, .corpo-quiz h2{
     font-size: 1.0rem;
 }
 #listinha li{
@@ -303,21 +300,21 @@ nav table{
 #listinha{
     padding-left: 1.0rem;
 }
-.texto{
+.texto, .corpo-quiz{
     padding-left: 1.0rem;
     padding-right: 2.0rem;
     font-size: 1.2rem;
 }
-.texto h1{
+.texto h1, .corpo-quiz h1{
     font-size: 3.0rem;
     margin-top: 1.0rem;
     margin-bottom: 0.7rem;
 }
-.texto h2{
+.texto h2, .corpo-quiz h2{
     margin-top: 0px;
     padding-bottom: 1.3rem;
 }
-.texto p{
+.texto p, .corpo-quiz p{
     font-size: 1.2rem;
     line-height: 1.5em;
     text-align: justify;
@@ -346,7 +343,7 @@ nav table{
 label{
   display: block;
 }
-.texto a{
+.texto a , .corpo-quiz a{
   text-decoration: none;
   color: inherit;
   font-family: 'Nosifer', cursive;
@@ -354,7 +351,7 @@ label{
   text-shadow: 3px 3px #bf6913;
   transition: all .2s ease-in-out;
 }
-.texto a:hover{
+.texto a:hover,  .corpo-quiz a:hover{
   font-size: 1.5rem;
 }
 #paragrafo{
@@ -362,4 +359,50 @@ label{
 }
 #enviar{
   right: 50%;
+}
+label{
+    transition: all 0.2ms ease-in;
+}
+.resultado-bom{
+    padding-bottom: 8.5vw;
+    position: relative;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: solid 3px green;
+    border-radius: 20px;
+    background-color: rgba(78, 207, 19, 0.5);
+}
+.resultado-ruim{
+    padding-bottom: 14vw;
+    position: relative;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: solid 2px red;
+    border-radius: 20px;
+    background-color: rgba(219, 39, 26, 0.5);
+}
+.resultado-medio{
+    padding-bottom: 7vw;
+    position: relative;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: solid 2px rgb(255, 196, 0);
+    border-radius: 20px;
+    background-color: rgba(201, 156, 8, 0.5)
+}
+.resultado-bom img, .resultado-medio img, .resultado-ruim img{
+    float: right;
+    position: relative;
+    top: -1vw;
+    margin-left: 2em;
+    right: 1em;
+    width: 26vw;
+    box-shadow: 3px 0px 8px black;
+    border-radius: 20px;
+}
+.resultado-ruim p, .resultado-bom p, .resultado-medio p{
+    font-size: 1.5em;
 }

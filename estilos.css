@@ -360,6 +360,12 @@ label{
 #enviar{
   right: 50%;
 }
+#limpar{
+  visibility: hidden;
+}
+#limpadoAparecendo{
+  visibility: visible;
+}
 label{
     transition: all 0.2ms ease-in;
 }
@@ -405,4 +411,35 @@ label{
 }
 .resultado-ruim p, .resultado-bom p, .resultado-medio p{
     font-size: 1.5em;
+}
+.resultado-bom::after , .resultado-medio::after, .resultado-ruim::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+@media (max-width:720px){
+    nav{
+      position: static;
+      height: auto;
+      width: 100%;
+    }
+    nav .botaomenu{
+      font-size: 150%;
+    }
+    .corpo{
+      display: flex;
+      flex-direction: column;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+    .botaolivro img{
+      height: 23vh;
+    }
+    .titulo{
+      top: 3%;
+      bottom: auto;
+    }
+    .titulo{
+      font-size: 70%;
+    }
 }

@@ -8,6 +8,7 @@ let stringResultado;
 let tituloResultadoEl;
 let paragrafoResultadoEl;
 let imgResultadoEl;
+let limparAparecer = document.getElementById("limpar");
 
 function criaHTMLResultado() {
   divResultadoEl = document.createElement('div');
@@ -21,7 +22,7 @@ function criaHTMLResultado() {
   }
   else {
     if (stringResultado === 'medio'){
-      paragrafoResultadoEl.innerHTML = "Ainda precisa afiar esses conhecimentos, lembra que o nome do homem se escreve com todas as letras maiúsculas";  
+      paragrafoResultadoEl.innerHTML = "Ainda precisa afiar esses conhecimentos, lembra que o nome do homem se escreve com todas as letras maiúsculas";
     }
     else{
       paragrafoResultadoEl.innerHTML = "DOOM MANDOU VOCÊ IR ESTUDAR >:((";
@@ -35,7 +36,9 @@ function criaHTMLResultado() {
 }
 
 function contaAcertos() {
+
   scrollTo({ top: 0, behavior: `smooth` });
+  limparAparecer.id = "limpadoAparecendo";
   numerosAcertos = 0;
   for (let i = 1; i <= 6; i++){
     respostasEl = document.querySelector(`[name = "pergunta${i}"]:checked`);

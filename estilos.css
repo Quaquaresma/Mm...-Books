@@ -455,6 +455,7 @@ label{
       padding: 0;
       left: 0;
       right: 0;
+      width: 100%;
     }
     #topo-da-pagina img{
       display: none;
@@ -463,7 +464,7 @@ label{
       font-size: 70%;
     }
     .resultado-bom img, .resultado-medio img, .resultado-ruim img{
-      width: 70vw;
+      width: 100%;
       position: relative;
       top: -1vw;
       margin-left: 0;
@@ -540,6 +541,24 @@ label{
         font-size: 2.5rem;
         margin-top: 1.0rem;
         margin-bottom: 0.7rem;
+    }
+    .modal{
+      top: 1%;
+      left: 2%;
+      right: 2%;
+      bottom: 2%;
+    }
+    body{
+      overflow-x: hidden;
+      width: 97%;
+      -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #secreto{
+      bottom: -90%;
+      right: 2%;
+      top: auto;
     }
 
 }

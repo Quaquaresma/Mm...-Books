@@ -1,4 +1,4 @@
-html,body{
+ html,body{
     height: 100%;
 }
 body{
@@ -233,7 +233,9 @@ nav table{
     margin-bottom: 17%;
     font-family: 'Grandstander', cursive;
     background-color: rgba(47, 78, 128, 1);
-    position: relative; left: 5.5%; right: 0;
+    position: relative;
+    left: 5.5%;
+    right: 0;
     padding: 2%;
     color: white;
     box-shadow: 3px 0px 8px black;
@@ -271,8 +273,10 @@ nav table{
     position: relative;
     margin-left: 20px;
     background: rgba(47, 78, 128, 1);
+    top: -3%;
 }
 #topo-da-pagina img{
+  visibility: visible;
     height: 35%;
     width:19%;
     position: fixed;
@@ -316,6 +320,7 @@ nav table{
 }
 .texto p, .corpo-quiz p{
     font-size: 1.2rem;
+
     line-height: 1.5em;
     text-align: justify;
     margin-bottom: 2em;
@@ -370,7 +375,6 @@ label{
     transition: all 0.2ms ease-in;
 }
 .resultado-bom{
-    padding-bottom: 8.5vw;
     position: relative;
     padding-top: 1em;
     padding-left: 1em;
@@ -380,7 +384,6 @@ label{
     background-color: rgba(78, 207, 19, 0.5);
 }
 .resultado-ruim{
-    padding-bottom: 14vw;
     position: relative;
     padding-top: 1em;
     padding-left: 1em;
@@ -390,7 +393,6 @@ label{
     background-color: rgba(219, 39, 26, 0.5);
 }
 .resultado-medio{
-    padding-bottom: 7vw;
     position: relative;
     padding-top: 1em;
     padding-left: 1em;
@@ -433,13 +435,111 @@ label{
       margin-right: 2%;
     }
     .botaolivro img{
-      height: 23vh;
+      width: 80vw;
     }
     .titulo{
-      top: 3%;
+      top: 0;
       bottom: auto;
     }
     .titulo{
       font-size: 70%;
     }
+    .botaolivro:hover .titulo{
+      font-size: 90%;
+    }
+    .quiz, .resenha{
+      margin-left: 0;
+      margin-top: 0;
+      margin-right: 2%;
+      margin-bottom: 17%;
+      padding: 0;
+      left: 0;
+      right: 0;
+    }
+    #topo-da-pagina img{
+      display: none;
+    }
+    .capatexto{
+      font-size: 70%;
+    }
+    .resultado-bom img, .resultado-medio img, .resultado-ruim img{
+      width: 70vw;
+      position: relative;
+      top: -1vw;
+      margin-left: 0;
+      right: auto;
+      box-shadow: 3px 0px 8px black;
+      border-radius: 20px;
+      left: auto;
+      float: none;
+    }
+    .texto, .corpo-quiz{
+        padding-left: 1.0rem;
+        padding-right: 2.0rem;
+        font-size: 1.2rem;
+        margin-top: 1em;
+        padding: 1em;
+    }
+    .card{
+        max-width: 50%;
+        float: right;
+        position: relative;
+        margin-left: 20px;
+        background: rgba(47, 78, 128, 1);
+    }
+    .pp{
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 2;
+      height: 70vh;
+      width: auto;
+      top: 0%;
+      margin-top: 7vh;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .len{
+        width: auto;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0%;
+        height: 90.51%;
+        bottom: 0;
+        top: auto;
+    }
+    .ed{
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        top: 0%;
+        margin-top: 7vh;
+    }
+    .botaolivro{
+      height: auto;
+    }
+    .pp img{
+      margin-bottom: 3px;
+      height: auto;
+    }
+    .botaolivro img{
+      height: auto;
+    }
+    .resultado-bom p{
+      clear: both;
+    }
+    .resultado-ruim p{
+      clear: both;
+    }
+    .resultado-medio p{
+      clear: both;
+    }
+    .texto h1, .corpo-quiz h1{
+        font-size: 2.5rem;
+        margin-top: 1.0rem;
+        margin-bottom: 0.7rem;
+    }
+
 }

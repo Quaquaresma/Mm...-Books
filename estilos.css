@@ -173,11 +173,18 @@ nav table{
     display: inline-block;
     position: relative;
 }
-.botaolivro img{
+.botaolivro a {
+    width: 100%;   /* auto para 100% */
+    display: flex; /* block para flex */
+    height: 100%;
+}
+
+.botaolivro img {
     box-shadow: 3px 0px 8px black;
     width: 100%;
     height: calc((100vh - 2 * var(--espacamento-vertical) - 1em) / 2);
     object-fit: cover;
+    flex: 1;       /* coloquei flex 1 (agora que o <a> é flex, isto aqui faz ocupar todo o espaço */
 }
 .pp {
     grid-column: 2 / span 1;

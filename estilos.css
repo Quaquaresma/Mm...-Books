@@ -7,6 +7,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    margin: 0;
 }
 .home{
     position: fixed;
@@ -42,7 +43,7 @@ nav .botaomenu{
     position: relative;
     width: 100%;
     text-align: center;
-    font-size: 250%;
+    font-size: min(4vw, 2em);
     opacity: 100%;
     background-image: none;
     transition: all 100ms ease-in;
@@ -65,14 +66,20 @@ nav table{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin-left: 32%;
-    padding-top: auto;
-    padding-bottom: auto;
+    margin-left: calc(23vw + 2em);
     width: auto;
-    margin-right: 14vw;
+    row-gap: 1em;
+    column-gap: 1em;
+    margin-right: 2em;
+    margin-top: var(--espacamento-vertical);
+    margin-bottom: var(--espacamento-vertical);
+    max-height: calc(100vh - 2 * var(--espacamento-vertical));
+    --espacamento-vertical: 2.5em;
 }
 .botaolivro a{
     width: auto;
+    display: block;
+    height: 100%;
 }
 #cred{
     position: fixed;
@@ -143,8 +150,8 @@ nav table{
     color: white;
     width: 100%;
     position: absolute;
-    bottom: 0%;
-    top: auto;
+    bottom: auto;
+    top: 0;
     margin-bottom: 0vh;
     background-color: rgba(135, 23, 5, 0.6);
     transition: all 300ms ease-out;
@@ -152,9 +159,6 @@ nav table{
 .botaolivro:hover .titulo{
     background-color: rgba(135, 23, 5, 1);
     font-size: 170%;
-}
-.len .titulo{
-    margin-bottom: 2.55vh;
 }
 .pp .titulo{
     top: 0;
@@ -166,54 +170,39 @@ nav table{
 }
 
 .botaolivro{
-    height: 40vh;
     display: inline-block;
     position: relative;
 }
 .botaolivro img{
     box-shadow: 3px 0px 8px black;
-    bottom: 0%;
-    height: 40vh;
+    width: 100%;
+    height: calc((100vh - 2 * var(--espacamento-vertical) - 1em) / 2);
+    object-fit: cover;
 }
 .pp {
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
-    height: 70vh;
-    width: auto;
-    top: 0%;
-    margin-top: 7vh;
-    margin-left: 4vw;
 }
 .pp img{
-    height: 86.7vh;
-    width: auto;
+  height: calc(100vh - 2 * var(--espacamento-vertical));
+  object-position: top center;
 }
 .len{
-    margin-top: 6.5vh;
-    width: auto;
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0%;
-    height: 90.51%;
-    bottom: 0;
-    top: auto;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    object-fit: cover;
 }
 .ed{
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
-    margin: auto;
-    width: auto;
-    top: 0%;
-    margin-top: 7vh;
 }
 #secreto {
     position: absolute;
     top: 0;
     right: 0;
-    width: 3vw;
-    height: 3vh;
     opacity: 0;
     font-size: 2rem;
     text-decoration: none;

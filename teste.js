@@ -2,7 +2,7 @@ let enviarEl = document.querySelector('#enviar');
 let respostasEl;
 let numerosAcertosEl;
 let labelRespostaEl;
-let quizContainerEl = document.querySelector('.corpo-quiz');
+let quizContainerEl = document.querySelector('.quiz-wrapper');
 let divResultadoEl;
 let stringResultado;
 let tituloResultadoEl;

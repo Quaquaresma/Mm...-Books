@@ -43,7 +43,7 @@ nav .botaomenu{
     position: relative;
     width: 100%;
     text-align: center;
-    font-size: min(4vw, 2em);
+    font-size: min(3vw, 2em);
     opacity: 100%;
     background-image: none;
     transition: all 100ms ease-in;
@@ -100,7 +100,7 @@ nav table{
     position: fixed;
     top: 5%;
     bottom: 5%;
-    left: 26%;
+    left: 28%;
     right: 7%;
     padding: 1%;
     background-color: rgba(47, 78, 128, 1);
@@ -290,7 +290,7 @@ nav table{
 .texto h1, .corpo-quiz h1{
     font-size: 2.0rem;
 }
-.texto h2, .corpo-quiz h2{
+.texto h2, .quiz-wrapper h2{
     font-size: 1.0rem;
 }
 #listinha li{
@@ -300,21 +300,21 @@ nav table{
 #listinha{
     padding-left: 1.0rem;
 }
-.texto, .corpo-quiz{
+.texto, .quiz-wrapper{
     padding-left: 1.0rem;
     padding-right: 2.0rem;
     font-size: 1.2rem;
 }
-.texto h1, .corpo-quiz h1{
+.texto h1, .quiz-wrapper h1{
     font-size: 3.0rem;
     margin-top: 1.0rem;
     margin-bottom: 0.7rem;
 }
-.texto h2, .corpo-quiz h2{
+.texto h2, .quiz-wrapper h2{
     margin-top: 0px;
     padding-bottom: 1.3rem;
 }
-.texto p, .corpo-quiz p{
+.texto p, .quiz-wrapper p{
     font-size: 1.2rem;
 
     line-height: 1.5em;
@@ -343,8 +343,9 @@ nav table{
 }
 label{
   display: block;
+  padding: 1%;
 }
-.texto a , .corpo-quiz a{
+.texto a , .quiz-wrapper a{
   text-decoration: none;
   color: inherit;
   font-family: 'Nosifer', cursive;
@@ -352,7 +353,7 @@ label{
   text-shadow: 3px 3px #bf6913;
   transition: all .2s ease-in-out;
 }
-.texto a:hover,  .corpo-quiz a:hover{
+.texto a:hover,  .quiz-wrapper a:hover{
   font-size: 1.5rem;
 }
 #paragrafo{
@@ -407,13 +408,23 @@ label{
     box-shadow: 3px 0px 8px black;
     border-radius: 20px;
 }
-.resultado-ruim p, .resultado-bom p, .resultado-medio p{
+.resultado-ruim > p, .resultado-bom > p, .resultado-medio > p{
     font-size: 1.5em;
+    width: auto;
 }
 .resultado-bom::after , .resultado-medio::after, .resultado-ruim::after{
     content: "";
     display: block;
     clear: both;
+}
+.corpo-quiz p{
+    border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 20px;
+    padding: 2%;
+    background-color: rgb(61, 96, 148);
+    text-shadow: 1px 1px black;
 }
 @media (max-width:720px){
     nav{
@@ -470,7 +481,7 @@ label{
       left: auto;
       float: none;
     }
-    .texto, .corpo-quiz{
+    .texto, .quiz-wrapper{
         padding-left: 1.0rem;
         padding-right: 2.0rem;
         font-size: 1.2rem;
@@ -490,7 +501,6 @@ label{
       height: 70vh;
       width: auto;
       top: 0%;
-      margin-top: 7vh;
       margin-left: auto;
       margin-right: auto;
     }
@@ -512,7 +522,6 @@ label{
         margin-right: auto;
         width: auto;
         top: 0%;
-        margin-top: 7vh;
     }
     .botaolivro{
       height: auto;
@@ -545,11 +554,11 @@ label{
       bottom: 2%;
     }
     body{
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
       overflow-x: hidden;
-      width: 97%;
-      -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-        box-sizing: border-box;
+      box-sizing: border-box;
     }
     #secreto{
       bottom: -90%;

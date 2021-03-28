@@ -28,6 +28,7 @@ function criaHTMLResultado() {
       paragrafoResultadoEl.innerHTML = "DOOM MANDOU VOCÊ IR ESTUDAR >:((";
     }
   }
+  enviarEl.style.display = 'none';
   divResultadoEl.appendChild(tituloResultadoEl);
   divResultadoEl.appendChild(imgResultadoEl);
   divResultadoEl.appendChild(paragrafoResultadoEl);
@@ -36,7 +37,6 @@ function criaHTMLResultado() {
 }
 
 function contaAcertos() {
-
   scrollTo({ top: 0, behavior: `smooth` });
   limparAparecer.id = "limpadoAparecendo";
   numerosAcertos = 0;
